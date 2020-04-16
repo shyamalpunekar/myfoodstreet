@@ -8,6 +8,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
+import org.robolectric.android.controller.ActivityController;
 import org.robolectric.annotation.Config;
 
 
@@ -17,10 +18,12 @@ import static org.junit.Assert.assertTrue;
 @RunWith(RobolectricTestRunner.class)
 public class MainActivityTest {
     private MainActivity activity;
+    private ActivityController<MainActivity> testActivity;
 
     @Before
     public void setUp(){
         activity = Robolectric.setupActivity(MainActivity.class);
+        testActivity = Robolectric.buildActivity(MainActivity.class);
     }
 
     @Test
