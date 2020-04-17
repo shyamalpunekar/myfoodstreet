@@ -1,6 +1,4 @@
-package com.lionindigital.myfoodstreet;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.lionindigital.myfoodstreet.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +8,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.lionindigital.myfoodstreet.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
